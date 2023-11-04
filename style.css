@@ -1,4 +1,4 @@
-.text {
+text {
     color: #676767;
 }
 
@@ -199,10 +199,15 @@ text-align: center;
 
 .hero-section {
     display: flex;
+    align-items: center;
+    justify-content: center !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
     /* align-items: center; */
 
-    height: 783px;
-    flex-shrink: 0;
+    /* height: 783px; */
+    /* flex-shrink: 0; */
+
     background: #fff;
 }
 .hero-main {
@@ -703,7 +708,7 @@ a {
 .element-course-we-offer {
     position: relative;
     /* width: 1440px; */
-    height: 864px;
+     height: 864px; 
     background-color: #ebf7ff;
     overflow: hidden;
 }
@@ -1119,7 +1124,13 @@ a {
      box-shadow: 0px 13px 40px lightcoral;
   
 }
- @media screen and (max-width:480px){
+/* .pading{
+    transition: width 2s linear;
+} */
+.pading:hover{
+   transform: scale(1,1.20); 
+}
+@media screen and (max-width:480px){
     .announcement{
         display:none;
     }
@@ -1144,11 +1155,12 @@ a {
         flex-wrap: wrap ;
     } 
     .marqu{
-        display:none;
+        display:none; 
+      
     }
-    .hero-form-frame{
+    /* .hero-form-frame{
          display:none
-    }
+    } */
     .element-course-we-offer{
         display: flex;
         flex-direction: column;
@@ -1171,24 +1183,58 @@ a {
         align-items: center;
         flex-wrap: wrap ;
     }
-    .hero-section{
+    .hero-section,
+    .course-cards{
         /* display: flex; */
         flex-direction: column;
         /* align-items: center; */
-        /* flex-wrap: wrap ; */
+        /* flex-wrap: wrap ;  */
     }
     .hero-features{
         /* width:80%;
         margin:auto; */
         flex-direction: column;
-        flex-wrap: wrap;
+         flex-wrap: wrap; 
     }
+    .hero-main-text-primary-first{
+        width:70%;
+    }
+    .hero-main-text-primary-second-full{
+       margin-right: 60px;
+    }
+    .hero-madeby{
+        margin-right: 230px;
+    }
+    .hero-form-frame{
+        width: 90%;
+        height: 110%;
+        /* margin:auto; */
+       /* margin-right: 900px; */
+       justify-content: center;
+
+
+
+    }
+    .hero-form{
+       padding-right: 250px;
+       width: fit-content;
+    }
+   .sapling-card{
+    width:90%;
+    margin:auto;
+   }
+   
+
+   
+
+   }
+
 
       
 
 
 
 } 
-@media screen and (max-width:768px) {
-    
+@media screen and (max-width:768px) {
+    
 }
